@@ -9,7 +9,7 @@
     "stack": "heroku-18"
   },
   "source_blob": {
-    "url": "https://example.com/source.tgz?token=xyz",
+    "url": "https://github.com/lecatos/hello-heroku.git",
     "version": "v1.3.0"
   }
 }
