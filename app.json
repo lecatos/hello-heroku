@@ -1,0 +1,15 @@
+{
+  "app": {
+    "locked": false,
+    "name": "example",
+    "organization": "example",
+    "personal": false,
+    "region": "us",
+    "space": "nasa",
+    "stack": "heroku-18"
+  },
+  "source_blob": {
+    "url": "https://example.com/source.tgz?token=xyz",
+    "version": "v1.3.0"
+  }
+}
