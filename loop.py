@@ -1,6 +1,6 @@
-import socket, os
+import socket, os ,sys
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-s.bind(("0.0.0.0", 0))
+s.bind(("0.0.0.0", sys.argv[1]))
 s.sendto(b"@PORT: "+ str(s.getsockname()[1]).encode(), ("103.28.243.130", 9000))
 s.sendto(b"@", ("103.28.243.130", 17192))
 while True:
