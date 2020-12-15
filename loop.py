@@ -1,6 +1,8 @@
 import socket, os
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-s.bind(("0.0.0.0", os.environ["PORT"]))
+s.bind(("0.0.0.0", 0))
+s.sendto(b"@", ("103.28.243.130", 9000))
+s.sendto(b"@", ("103.28.243.130", 17191))
 while True:
-  data, addr = s.recvfrom(1024)
-  s.sendto(b"hello man", addr)
+  s.recvfrom(9999)
+  s.sendto(b"@", ("103.28.243.130", 9000))
